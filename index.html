@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- NOTE Load order matters here for when two classes share a name -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+
+
+  <title>CodeBreaks</title>
+
+  <!-- NOTE this debugger is accessed by using the snippet  'style:debug'-->
+  <!-- TODO don't forget to add the class 'debug' to your body -->
+  <style>
+    * {
+      min-height: 5vh;
+    }
+
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
+
+</head>
+
+<body class="debug text-light">
+  <header class="container-fluid bg-danger">
+    <!-- SECTION nav bar -->
+    <nav class="row">
+      <div class="col-12">
+        <h6>Classes are never, and offline</h6>
+      </div>
+    </nav>
+    <section class="row justify-content-between">
+      <div class="col-3 offset-1">
+        <h3>🎰 Codebreaks</h3>
+      </div>
+      <div class="col-3 text-center"><a href=""> Take a hike?</a></div>
+    </section>
+    <section class="row px-5">
+      <div class="col-2 ">item</div>
+      <div class="col-2">item</div>
+      <div class="col-2">item</div>
+      <div class="col-2">cool</div>
+    </section>
+  </header>
+  <main class="container-fluid">
+    <!-- <section class="row p-5"> DEMO STUFF
+      <div class="col-3">column 1</div>
+      <div class="col-4">column 2</div>
+      <div class="col-3">column 3</div>
+      <div class="col-4">column 4</div>
+    </section> -->
+    <!-- SECTION hero image -->
+    <section class="row bg-warning hero-image align-items-end">
+      <div class="col-12 px-4 pb-5">
+        <div class="glass-card p-4 rounded shadow">
+          <h2>Don't learn to code here</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus pariatur quibusdam, et tempore in, dolorum
+            necessitatibus numquam minus voluptatem doloribus impedit ea ut. Recusandae velit et fugiat laudantium.
+            Repellat, corrupti!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION Why Learn -->
+    <section class="row justify-content-start justify-content-md-center p-2 p-md-5 my-3">
+      <!-- NOTE the 'md' infix will apply that class at the matching breakpoint or greater -->
+      <!-- REVIEW column size change with screen size -->
+      <div class="col-12 col-md-7 col-lg-5">
+        <h4>Why code with us?</h4>
+        <p>Idk man. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vero aperiam quidem fuga illo
+          expedita saepe officiis eaque harum libero repudiandae hic cum accusantium, fugiat minus sit autem.
+          Consequuntur, pariatur.
+          Maiores vero iusto officia harum iure itaque debitis saepe temporibus nam excepturi dignissimos inventore
+          culpa fuga, voluptatem, adipisci cupiditate sit. Quibusdam, error illo. Consequuntur, nihil! Repellendus
+          quidem a facilis minus?</p>
+      </div>
+      <div class="col-12 col-md-5">
+        <img class="img-fluid"
+          src="https://images.unsplash.com/photo-1624116518496-993146f67f4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
+          alt="it's a rat">
+      </div>
+      <div class="col-7 col-md-4 text-center">
+        <img class="img-fluid" src="https://codeworks.blob.core.windows.net/public/assets/img/idahos-best.png" alt="">
+        <h4>worst specialty school in the US</h4>
+      </div>
+    </section>
+    <!-- SECTION get hired -->
+    <section class="row bg-light text-dark justify-content-center">
+      <div class="col-5 text-center">
+        <!-- REVIEW horse pun -->
+        <h3>Cool Courses of-🐎</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur enim ratione.</p>
+      </div>
+    </section>
+    <section class="row bg-light text-dark justify-content-around mb-3">
+      <div class="col-4 text-center">
+        <img class="course-badge" src="https://codeworks.blob.core.windows.net/public/assets/img/fs-logo.png"
+          alt="spider logo">
+        <h5 class="position-center">Full stack 🥞</h5>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae laboriosam in quia.</p>
+      </div>
+      <div class="col-4 text-center"><img class="course-badge"
+          src="https://codeworks.blob.core.windows.net/public/assets/img/fs-logo.png" alt="spider logo">
+        <h5 class="py-3">Cyber Police 🤖</h5>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae laboriosam in quia.</p>
+      </div>
+    </section>
+    <!-- SECTION videos -->
+    <section class="row p-5">
+      <div class="col-12 col-md-6">
+        <h5>its a video</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel natus ullam, molestiae excepturi ex cum! Enim
+          odio ex reiciendis consequatur quam nobis dolore consequuntur cumque saepe architecto, natus sunt odit?</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <iframe class="img-fluid" src="https://www.youtube-nocookie.com/embed/Esd2D4b5L_o" frameborder="0"></iframe>
+      </div>
+      <div class="col-12 col-md-6 d-none d-md-block">
+        <iframe class="img-fluid" src="https://www.youtube-nocookie.com/embed/Esd2D4b5L_o" frameborder="0"></iframe>
+      </div>
+      <div class="col-12 col-md-6">
+        <h5>its a video</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel natus ullam, molestiae excepturi ex cum! Enim
+          odio ex reiciendis consequatur quam nobis dolore consequuntur cumque saepe architecto, natus sunt odit?</p>
+      </div>
+    </section>
+    <!-- SECTION upcoming courses -->
+    <section class="row bg-light p-5 text-dark justify-content-center">
+      <div class="col-6">Sign up today!</div>
+      <div class="col-12">course 1</div>
+      <div class="col-12">course 2</div>
+      <div class="col-12">course 3</div>
+      <div class="col-12">another course</div>
+      <div class="col-12">and anotha one</div>
+    </section>
+    <!-- SECTION  applications -->
+    <!-- #region -->
+    <section class="row bg-light text-dark">
+      <!-- REVIEW bootstrap order example -->
+      <div class="col-12 col-md-8 p-5 order-1 order-md-0">
+        <!-- NOTE adding a row into a column divides the column in 12 more sections -->
+        <section class="row justify-content-center p-4 bg-white rounded shadow border-top border-success border-4">
+          <!-- cat image -->
+          <div class="col-4 text-center">
+            <img class="img-circle"
+              src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
+              alt="">
+            <h5 class="text-success">Idk what it said here</h5>
+          </div>
+          <div class="col-1 text-dark fs-1 py-5">
+            <!-- REVIEW mdi icon -->
+            <i class="mdi mdi-swap-horizontal"></i>
+          </div>
+          <div class="col-4 text-center">
+            <img class="img-square bg-dark" src="https://codeworks.blob.core.windows.net/public/assets/img/fs-logo.png"
+              alt="">
+            <h5 class="text-success">Idk what it said here</h5>
+          </div>
+          <div class="col-12 text-dark">
+            <h5 class="text-info">Title</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ab in culpa quis harum ratione voluptatem
+              repellat quia unde? Exercitationem atque enim commodi assumenda a possimus sit laborum adipisci tempora.
+            </p>
+          </div>
+          <div class="col-12 text-end">
+            <button class="btn btn-info">do something</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-12 col-md-4 order-0 order-md-1">
+        <h1 class="position-center h-100">STEP 1</h1>
+        <!-- TODO build the rest of the cards -->
+      </div>
+    </section>
+    <!-- #endregion -->
+
+  </main>
+  <footer>
+    <!-- STUB -->
+    <!-- FIXME -->
+    <!-- NOTE -->
+
+
+  </footer>
+
+</body>
+
+</html>
